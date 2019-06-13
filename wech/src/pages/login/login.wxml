@@ -1,0 +1,28 @@
+<import src="../../comps/toast/toast.wxml"/>
+<view class="login" style="background-image: url('../../images/my/back.jpg');background-repeat: no-repeat">
+	<view class="login_title">
+		<image src="../../images/my/logo.png"></image>
+		<text>Welcome Chart with me</text>
+	</view>
+	<view class="login_user {{nameFocus}}">
+		<image src="../../images/my/person2.png" class="person"></image>
+		<input type="text" placeholder="用户ID" placeholder-style="color:#4b4c4c" bindinput="bindUsername" bindfocus="onFocusName" bindblur="onBlurName"/>
+	</view>
+	<view class="login_pwd {{psdFocus}}">
+		<image src="../../images/my/pws.png" class="pws"></image>
+		<input type="text" password placeholder="用户密码" placeholder-style="color:#4b4c4c" bindinput="bindPassword" bindfocus="onFocusPsd" bindblur="onBlurPsd"/>
+	</view>
+	<view class="login_btn bot">
+		<button hover-class="btn_hover" bind:tap="login">登录</button>
+	</view>
+	<view class="login_btn register">
+		<button hover-class="btn_hover" bind:tap="register">
+			注册
+		</button>
+	</view>
+	<view class="login_text bot2">
+		<navigator url="../register/register" open-type="redirect" hover-class="navigator-hover"></navigator>
+		<navigator url="../login_token/login_token" open-type="redirect" hover-class="navigator-hover"></navigator>
+	</view>
+	<template is="toast" data="{{ ..._toast_ }}"></template>
+</view>

@@ -1,0 +1,96 @@
+.register {
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+.register_title image {
+	margin-left: 37%;
+	margin-top: 5%;
+	width: 200rpx;
+	height: 200rpx;
+}
+
+
+.register_user, .register_pwd, .register_btn {
+	display: flex;
+}
+.register_user input, .register_pwd input {
+	height: 96rpx;
+	background-color: #ffffff;
+	border: 2rpx solid #999999;
+	border-radius: 8rpx;
+	box-sizing: border-box;
+	padding: 0 32rpx;
+	font-size: 34rpx;
+	color: #000;
+	margin: 0 64rpx;
+	display: inline-block;
+	flex: 1;
+}
+
+.nameFocus input, .psdFocus input{
+	border: 3rpx solid #0873DE;
+	box-sizing: border-box;
+}
+.register_user input {
+	margin-top: 128rpx
+}
+.register_pwd input {
+	margin-top: 32rpx;
+}
+.register_btn button{
+	flex: 1;
+	height: 96rpx;
+	margin: 32rpx 64rpx 0;
+	border-radius: 8rpx;
+	line-height: 96rpx;
+	color: rgb(255,255,255);
+	background-color: #0873DE;
+	font-size: 34rpx;
+}
+.btn_hover {
+	background-color: #137DCD;
+}
+.register_back {
+	margin-top: 28rpx;
+	padding: 0 64rpx;
+	height: 34rpx;
+}
+.register_back navigator {
+	font-size: 24rpx;
+	color: #0873DE;
+}
+.navigator-hover{
+	color: #2892FD;
+	background-color: #fff;
+}
+.input-hover{
+	border: 2rpx solid red;
+}
+.ors{
+	display: flex;
+	margin-top: 5%;
+}
+.ors text{
+	margin-left: 30rpx;
+	font-size: 50rpx;
+	font-weight: 500;
+	color: #c4c4c4;
+	text-align: center;
+}
+.bor{
+	margin-left: 4%;
+	margin-top: 30rpx;
+	width: 280rpx;
+	border-top:5rpx solid #d4d4d9;
+}
+
+.more{
+	display: flex;
+}
+.more image{
+	margin-top: 6%;
+	margin-left: 13%;
+	width: 120rpx;
+	height: 120rpx;
+}

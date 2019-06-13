@@ -1,0 +1,29 @@
+<import src="../../comps/toast/toast.wxml"/>
+<view class="register">
+	<view class="register_title">
+		<image src="../../images/my/M.png"></image>
+	</view>
+	<view class="register_user {{nameFocus}}">
+		<input type="text" placeholder="用户ID（字母或数字)" placeholder-style="color:rgb(173,185,193)" bindinput="bindUsername" bindfocus="onFocusName" bindblur="onBlurName"/>
+	</view>
+	<view class="register_pwd {{psdFocus}}">
+		<input type="text" password placeholder="用户密码" hover-class="input-hover" placeholder-style="color:rgb(173,185,193)" bindinput="bindPassword" bindfocus="onFocusPsd" bindblur="onBlurPsd"/>
+	</view>
+	<view class="register_btn">
+		<button hover-class="btn_hover" bindtap="register">注册</button>
+	</view>
+	<view class="register_back">
+		<navigator url="../login/login" open-type="redirect" hover-class="navigator-hover">返回登录</navigator>
+	</view>
+	<view class="ors">
+		<view class="bor"></view>
+		<text>OR</text>
+		<view class="bor"></view>
+	</view>
+	<view class="more">
+		<image src="../../images/my/w1.png"></image>
+		<image src="../../images/my/w2.png"></image>
+		<image src="../../images/my/w3.png"></image>
+	</view>
+	<template is="toast" data="{{ ..._toast_ }}"></template>
+</view>
